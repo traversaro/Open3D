@@ -43,7 +43,7 @@ static int ExtractCurrentFile(unzFile uf,
     int err = UNZ_OK;
     FILE *fout = nullptr;
     void *buf;
-    uInt size_buf;
+    unsigned int size_buf;
 
     unz_file_info64 file_info;
     err = unzGetCurrentFileInfo64(uf, &file_info, filename_inzip,
